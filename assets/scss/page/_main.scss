@@ -1,0 +1,240 @@
+.sc-video{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  .group-video{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    .main-video{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .text-area{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      inset: 0;
+      place-items: center;
+      background-color: #000;
+      color: #fff;
+      font-size: 15vw;
+      /* Mix Blend Mode does the all magic */
+      mix-blend-mode: multiply;
+      user-select: none;
+      font-weight: 800;
+     
+    }
+
+
+  }
+}
+
+@keyframes rotate_image{
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.sc-desc{
+  border: 1px solid #fff;
+  border-width: 1px 0px;
+  position: relative;
+  padding: 150px 0;
+  .wrapper{
+    max-width: 1274px;
+    margin: 0 auto;
+    display: flex;
+    .group-circle{
+      width: 33.333%;
+      padding: 0 15px;
+      margin-bottom: 30px;
+      box-sizing: border-box;
+      #badge-circle{
+        animation: rotate_image 12s linear infinite;
+        font-weight: bold;
+        .colore-badge{
+          fill: #000;
+        }
+      }
+    }
+    .group-text{
+      width: 66.666%;
+      padding: 0 15px;
+      margin-bottom: 30px;
+      box-sizing: border-box;
+      p{
+        font-size: 2.1em;
+        line-height: 50px;
+        margin-left: -1px;
+        span{
+          font-weight: bold;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.sc-work{
+  // overflow: hidden;
+  .group-title{
+    width: 100%;
+    display: flex;
+    padding: 50px;
+    .title-wrap{
+      box-sizing: border-box;
+      .title{
+        line-height: normal;
+        font-size: 6vw;
+        font-weight: bold;
+        line-height: 1;
+      }
+    }
+    // .line-wrap{
+    //   width: 66.666%;
+    //   padding: 0 15px;
+    //   margin-bottom: 30px;
+    //   box-sizing: border-box;
+    //   hr{
+    //     margin-top: 9%;
+    //   }
+    // }
+  }
+  .group-text{
+    display: flex;
+    .empty-wrap{
+      position: relative;
+    }
+    .desc-wrap{
+      width: 66.666%;
+      padding: 0 15px;
+      margin-bottom: 30px;
+      box-sizing: border-box;
+      p{
+        display: block;
+        width: 100%;
+        font-size: 2.1em;
+        line-height: 40px;
+        margin-left: -1px;
+      }
+    }
+  }
+  .group-work{
+    .work-list{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 50px;
+      padding: 50px;
+      .work-item{
+        
+        display: block;
+        position: relative;
+        border: 1px solid #fff;
+
+        .img-box{
+          position: relative;
+          padding-bottom: 70%;
+          background: #fff;
+          opacity: 1.5;
+          img{
+            position: absolute;
+            top: 0;left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+          
+          &:hover{
+            .link-wrap{
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+          .link-wrap{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.3);
+            backdrop-filter: blur(16px);
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s;
+            a{
+              font-size: 20px;
+              background: #fff;
+              color: #000;
+              padding: 8px 16px;
+              border-radius: 20px;
+              border: 1px solid #000;
+              transition: 0.2s;
+              &:hover{
+                background: #000;
+                color: #fff;
+              }
+
+            }
+          }
+         
+        }
+
+        .text-box{
+          padding: 20px;
+          .title{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 28px;
+            letter-spacing: -.05em;
+          
+            a{
+              font-size: 18px;
+              border: 1px solid #fff;
+              border-radius: 15px;
+              padding: 8px 16px;
+              &:hover{
+                color: #000;
+                background: #fff;
+              }
+            }
+          }
+          .desc{
+            font-size: 18px;
+            padding: 20px 0;
+            line-height: 1.5;
+          }
+          .spec{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            span{
+              border: 1px solid #fff;
+              padding: 8px 16px;
+              border-radius: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+  
+    
+
+
+

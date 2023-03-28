@@ -1,0 +1,86 @@
+.footer{
+  position: relative;
+  .sc-contact{
+    border: 1px solid #fff;
+    border-width: 1px 0px 0px 0px;
+    padding: 150px 50px;
+    .group-title{
+      display: flex;
+      .title-wrap{
+        .title{
+          font-size: 5.8vw;
+          font-weight: bold;
+          color: #fff;
+          margin-top: 10px;
+        }
+      }
+      
+    }
+    .group-text{
+    }
+  
+    .desc-wrap{
+      
+      p{
+        font-size: clamp(16px,2vw,50px);
+        line-height: 1.5;
+        padding-top: 30px;
+        word-break: keep-all;
+        span{
+          
+        }
+      }
+    }
+    .group-site{
+      display: flex;
+      gap: 30px;
+      margin-top: 50px;
+      .link-site{
+        border: 1px solid #f5f4ee;
+        padding: 16px 32px;
+        font-size: 22px;
+        border-radius: 30px;
+        &:hover{
+          background: #fff;
+          color: #000;
+        }
+      }
+    }
+  }
+  @keyframes marque-reverse{
+    0%{
+      transform: translateX(0%);
+    }
+    100%{
+      transform: translateX(-100%);
+    }
+  }
+  .sc-marque{
+    overflow: hidden;
+    background-color: #101010;
+    border: 1px solid #fff;
+    border-width: 1px 0px;
+    .marque-box{
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+      padding: 50px 0;
+      overflow: hidden;
+      .marque-list{
+        display: flex;
+        animation: marque-reverse 7s infinite linear;
+        .marque-item{
+          font-size: 150px;
+          letter-spacing: -.06em;
+        }
+      }
+    }
+  }
+  .copyright-box{
+    padding: 50px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    
+  }
+}

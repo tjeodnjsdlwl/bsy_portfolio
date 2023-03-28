@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BSY's Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+  
+  <div class="cursor">
+    <div id="circle"></div>
+    <div id="dot"></div>
+  </div>
+
+
+  <style>
+    /* .bar-vt{
+      position: fixed;
+      top: 0;
+      height: 100%;
+      width: 20px;
+      border:1px solid #fff;
+      border-width: 0px 1px;
+    }
+    .bar-vt.bar1{ left: 10vw; }
+    .bar-vt.bar2{ left: 50vw; }
+    .bar-vt.bar3{ left: 80vw; }
+    .bar-vt.bar4{ left: 90vw; }
+
+    .bar-hori{
+      position: absolute;
+      
+      left: 0;
+      width: 100%;
+      height: 20px;
+      border:1px solid #fff;
+      border-width: 1px 0px;
+    }
+    .bar-hori.bar1{top: 70vh;}
+    .bar-hori.bar3{top: 90vh;} */
+  </style>
+
+
+  <div class="wrapper">
+
+    <i class="bar-vt bar1"></i>
+    <i class="bar-vt bar2"></i>
+    <i class="bar-vt bar3"></i>
+    <i class="bar-vt bar4"></i>
+
+
+
+    <i class="bar-hori bar1"></i>
+    <i class="bar-hori bar2"></i>
+    <i class="bar-hori bar3"></i>
+
+
+    <header class="header">
+      <div class="group-fixed">
+        <h1 class="logo">
+          <a href="">
+            baek's Portfolio
+          </a>
+        </h1>
+        <div class="group-nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#">MAIN</a></li>
+            <li class="nav-item"><a href="#sc-work">WORKS</a></li>
+            <li class="nav-item"><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+
+     
+
+      
+
+    </header>
+
+    <main class="container">
+      
+      <section class="sc-video">
+        <div class="group-video">
+          <!-- <video class="main-video" autoplay loop muted>
+            <source src="./assets/images/sea.mp4" type="video/mp4">
+          </video> -->
+
+          <h2 class="text-area">
+            <span>PUBLISHER</span>
+          </h2>
+
+        </div>
+      </section>
+
+      <section class="sc-desc">
+        <div class="wrapper nospazio"> 
+          <div class="group-circle">
+            <svg id="badge-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="currentColor" width="300" height="300"> 
+              <path id="svg-text-circle" d="M 20 50 C 20 33.43 33.43 20 50 20 C 66.57 20 80 33.43 80 50 C 80 66.57 66.57 80 50 80 C 33.43 80 20 66.57 20 50 Z" fill="none"></path> 
+              <circle class="colore-badge" cx="100" cy="100" r="100"></circle> 
+              <text dy="-2" textLength="180"> 
+                <textPath class="circle-text" xlink:href="#svg-text-circle">Passionate • Publisher •</textPath> 
+              </text> 
+            </svg> 
+          </div>
+          <div class="group-text" data-fade=true>
+            <p>
+              올바른 정보를 전달할 수 있는 탄탄한 구조의 시맨틱 마크업과 CSS, JS를 통한 동적인 기술을 고려하며 원할한 소통을 통해 완성도 높은 프로젝트를 만들 것 입니다. 
+              또한 자바스크립트를 꾸준히 공부해 나가면서 급변하는 IT시장에 맞춰 프레임워크도 다룰 줄 아는 스펙트럼이 넓은 <span>퍼블리셔</span>가 되겠습니다.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="sc-work" id="sc-work">
+        <div class="group-title">
+          <div class="title-wrap">
+            <h2 class="title" data-fade=true>
+              <span>W</span><span>O</span><span>R</span><span>K</span><span>S</span>
+            </h2>
+          </div>
+          
+        </div>
+        <div class="group-work">
+          <ul class="work-list">
+            <li class="work-item">
+
+              <div class="img-box">
+                 <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7f85aa153078103.63298137a5adf.gif" alt="네이버">
+                 <div class="link-wrap">
+                    <a href="">GO SITE</a>
+                    <a href="">VELOG</a>
+                 </div>
+              </div>
+
+              <div class="text-box">
+                <p class="title">
+                  네이버 클론코딩
+                  <a href="https://velog.io/@bsy0720/NAVER-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9" class="link-code">Code Review</a>
+                </p>
+                <p class="desc">Apple Watch테마로 Apple, Awwwards등 래퍼런스 사이트를 참고하여 만든 리뉴얼한 PC적응형 사이트 입니다.</p>
+                <div class="spec">
+                  <span>wai-area</span>
+                  <span>classnaming</span>
+                  <span>flex</span>
+                  <span>smentic</span>
+                </div>
+              </div>
+            </li>
+            <li class="work-item">
+              <div class="img-box">
+                <a href="">
+                  <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7f85aa153078103.63298137a5adf.gif">
+                </a>
+              </div>
+              <div class="text-box">
+                <p class="title">
+                  서울시청 클론코딩
+                  <a href="https://velog.io/@bsy0720/%EC%84%9C%EC%9A%B8%EC%8B%9C%EC%B2%AD-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9" class="link-code">Code Review</a>
+                </p>
+                <p class="desc">#HTML #CSS #Jquery #Swiper</p>
+              </div>
+            </li>
+            <li class="work-item">
+              <div class="img-box">
+                <a href="">
+                  <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7f85aa153078103.63298137a5adf.gif">
+                </a>
+              </div>
+              <div class="text-box">
+                <p class="title">
+                  네이버 커리어스 클론코딩
+                  <a href="https://velog.io/@bsy0720/%EB%84%A4%EC%9D%B4%EB%B2%84-%EC%BB%A4%EB%A6%AC%EC%96%B4%EC%8A%A4-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9" class="link-code">Code Review</a>
+                </p>
+                <p class="desc">#HTML #CSS #Jquery #Swiper #반응형PC</p>
+              </div>
+            </li>
+            <li class="work-item">
+              <div class="img-box">
+                <a href="">
+                  <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7f85aa153078103.63298137a5adf.gif">
+                </a>
+              </div>
+              <div class="text-box">
+                <p class="title">
+                  Coke Play 클론코딩
+                  <a href="https://velog.io/@bsy0720/%EC%BD%94%ED%81%AC%ED%94%8C%EB%A0%88%EC%9D%B4-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9" class="link-code">Code Review</a>
+                </p>
+                <p class="desc">#HTML #CSS #Jquery #Swiper #JSON #모바일 적응형PC</p>
+              </div>
+            </li>
+            <li class="work-item">
+              <div class="img-box">
+                <a href="">
+                  <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7f85aa153078103.63298137a5adf.gif">
+                </a>
+              </div>
+              <div class="text-box">
+                <p class="title">
+                  ZARA 리뉴얼코딩
+                  <a href="https://velog.io/@bsy0720/ZARA%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%A6%AC%EB%89%B4%EC%96%BC" class="link-code">Code Review</a>
+                </p>
+                <p class="desc">#HTML #CSS #Jquery #GSAP</p>
+              </div>
+            </li>
+            <li class="work-item">
+              <div class="img-box">
+                <a href="">
+                  <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7f85aa153078103.63298137a5adf.gif">
+                </a>
+              </div>
+              <div class="text-box">
+                <p class="title">
+                  플로우 클론코딩
+                  <a href="https://velog.io/@bsy0720/FLOW-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9" class="link-code">Code Review</a>
+                </p>
+                <p class="desc">#HTML #CSS #Jquery #Swiper #GSAP #반응형PC</p>
+              </div>
+            </li>
+            <li class="work-item">
+              <div class="img-box">
+                <a href="">
+                  <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7f85aa153078103.63298137a5adf.gif">
+                </a>
+              </div>
+              <div class="text-box">
+                <p class="title">
+                  지식IN 클론코딩
+                  <a href="https://velog.io/@bsy0720/%EC%A7%80%EC%8B%9DIN-%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9" class="link-code">Code Review</a>
+                </p>
+                <p class="desc">#HTML #SCSS #Jquery #Swiper #GSAP #반응형PC</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
+      <style>
+        .sc-plan{
+          display: flex;
+          flex-direction: column;
+          height: 100vh;
+          overflow: hidden;
+          /* border-width: 1px 0; */
+          border-top: 1px solid #fff;
+        }
+        .sc-plan .headline{
+          font-size: 6vw;
+          font-weight: bold;
+          line-height: 1;
+          padding: 110px 50px 50px;
+        }
+        .sc-plan .group-slide{
+          display: flex;
+          flex: 1;
+          align-items: center;
+        }
+        .sc-plan .plan-list{
+          display: flex;
+          gap: 30px;
+          padding: 0 50px;
+          min-height: 300px;
+        }
+        .sc-plan .plan-item{
+          width: 40vw;
+          background: #fff;
+          color: #000;
+          padding: 50px;
+        }
+        .sc-plan .plan-item h3{
+          font-size: 38px;
+          padding-bottom: 50px;
+          font-weight: 500px
+        }
+        .sc-plan .plan-item p{
+          font-size: 22px;
+          line-height: 1.5;
+        }
+      </style>
+
+      <section class="sc-plan">
+        <h2 class="headline">work plan</h2>
+        <div class="group-slide">
+          <ul class="plan-list">
+            <li class="plan-item">
+              <h3>ES6</h3>
+              <p>ie가 지원종료되며 크로스브라우징이 의미가없어지고 프레임워크에 사용이 많아 짐에따라 
+                ES6문법은 필수이며 라이브러리 없이도 자유자재로 쓸수있게 공부중입니다</p>
+            </li>
+            <li class="plan-item">
+              <h3>Node.js</h3>
+              <p>ie가 지원종료되며 크로스브라우징이 의미가없어지고 프레임워크에 사용이 많아 짐에따라 
+                ES6문법은 필수이며 라이브러리 없이도 자유자재로 쓸수있게 공부중입니다</p>
+            </li>
+            <li class="plan-item a1">
+              <h3>GIT</h3>
+              <p>ie가 지원종료되며 크로스브라우징이 의미가없어지고 프레임워크에 사용이 많아 짐에따라 
+                ES6문법은 필수이며 라이브러리 없이도 자유자재로 쓸수있게 공부중입니다</p>
+            </li>
+            <li class="plan-item">
+              <h3>SPA / SSR</h3>
+              <p>ie가 지원종료되며 크로스브라우징이 의미가없어지고 프레임워크에 사용이 많아 짐에따라 
+                ES6문법은 필수이며 라이브러리 없이도 자유자재로 쓸수있게 공부중입니다</p>
+            </li>
+            <li class="plan-item">
+              <h3>REACT</h3>
+              <p>ie가 지원종료되며 크로스브라우징이 의미가없어지고 프레임워크에 사용이 많아 짐에따라 
+                ES6문법은 필수이며 라이브러리 없이도 자유자재로 쓸수있게 공부중입니다</p>
+            </li>
+            <li class="plan-item">
+              <h3>TYPE SCRIPT</h3>
+              <p>ie가 지원종료되며 크로스브라우징이 의미가없어지고 프레임워크에 사용이 많아 짐에따라 
+                ES6문법은 필수이며 라이브러리 없이도 자유자재로 쓸수있게 공부중입니다</p>
+            </li>
+            <li class="plan-item">
+              <h3>NEXT</h3>
+              <p>ie가 지원종료되며 크로스브라우징이 의미가없어지고 프레임워크에 사용이 많아 짐에따라 
+                ES6문법은 필수이며 라이브러리 없이도 자유자재로 쓸수있게 공부중입니다</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
+    </main>
+    <footer class="footer">
+      <section class="sc-contact">
+        <div class="group-title">
+          <div class="title-wrap">
+            <h2 class="title" data-fade=true>
+              <span>C</span><span>O</span><span>N</span><span>T</span><span>A</span><span>C</span><span>T</span>              
+            </h2>
+          </div>
+          <div class="line-wrap">
+            <hr />
+          </div>
+        </div> 
+        <div class="group-text">
+          <div class="desc-wrap">
+            <p data-fade=true>
+              동적 표현을 CSS & JS로 구현하는 것을 좋아합니다.<br>
+               원활한 소통으로 프로젝트의 완성도를 높이며,
+               급변하는 프론트엔드 프레임워크에 구애받지 않고 바닐라 자바스크립트를 탄탄하게 배우는 퍼블리셔가 되겠습니다.
+              하나에 안주하지 않고 배우고자 하는 열정으로,
+              결과만큼 과정도 중시하는 <span>퍼블리셔</span> 가 되겠습니다.
+            </p>
+          </div>
+        </div>
+        <div class="group-site">
+          <a href="https://github.com/bsy0720" class="link-site">GitHub</a>
+          <a href="https://velog.io/@bsy0720" class="link-site">Velog</a>
+        </div>
+      </section>
+
+     
+
+
+      <section class="sc-marque">
+        <div class="marque-box">
+          <ul class="marque-list">
+            <li class="marque-item">Creative</li>
+            <li class="marque-item">-</li>
+            <li class="marque-item">Passionate</li>
+            <li class="marque-item">-</li>
+            <li class="marque-item">Challenging</li>
+            <li class="marque-item">-</li>
+          </ul>
+          <ul class="marque-list">
+            <li class="marque-item">Creative</li>
+            <li class="marque-item">-</li>
+            <li class="marque-item">Passionate</li>
+            <li class="marque-item">-</li>
+            <li class="marque-item">Challenging</li>
+            <li class="marque-item">-</li>
+          </ul>
+        </div>
+      </section>
+      <div class="copyright-box">
+        <p>©2023 BSY</p>
+      </div>
+    </footer>
+  </div>
+
+
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
